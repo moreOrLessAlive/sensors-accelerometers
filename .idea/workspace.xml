@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1c627948-632f-4d4c-9825-495109406e66" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MariaDB - @127.0.0.1" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MariaDB - @127.0.0.1" type="feb32156:DbDataSourceImpl" />
+        <item name="information_schema: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MariaDB - sensors@127.0.0.1" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MariaDB - sensors@127.0.0.1" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="MariaDB - sensors@127.0.0.1" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="sensors: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="sensors" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Zzr7ODWFC6k2bDPZD9sUuR2nts" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql&#10;mariadb" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",Show Fields" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1c627948-632f-4d4c-9825-495109406e66" name="Default Changelist" comment="" />
+      <created>1585852595190</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585852595190</updated>
+      <workItem from="1585852596498" duration="3006000" />
+      <workItem from="1585907522206" duration="2439000" />
+      <workItem from="1586009756621" duration="627000" />
+      <workItem from="1586417179665" duration="613000" />
+      <workItem from="1586522179726" duration="3031000" />
+      <workItem from="1586682067662" duration="8991000" />
+      <workItem from="1586705726714" duration="739000" />
+      <workItem from="1586706511897" duration="344000" />
+      <workItem from="1586706884375" duration="337000" />
+      <workItem from="1586711319018" duration="1839000" />
+      <workItem from="1586756285052" duration="608000" />
+      <workItem from="1586856399563" duration="7187000" />
+      <workItem from="1587036611359" duration="16449000" />
+      <workItem from="1587117385598" duration="3828000" />
+      <workItem from="1587132393245" duration="1129000" />
+      <workItem from="1587218651321" duration="969000" />
+      <workItem from="1587281604110" duration="9977000" />
+      <workItem from="1587315153021" duration="17057000" />
+      <workItem from="1587360389742" duration="11768000" />
+      <workItem from="1587536702643" duration="1199000" />
+      <workItem from="1587636324649" duration="657000" />
+      <workItem from="1587713576114" duration="614000" />
+      <workItem from="1587719077818" duration="17066000" />
+      <workItem from="1587970837547" duration="614000" />
+      <workItem from="1588257597299" duration="3050000" />
+      <workItem from="1588665428670" duration="8855000" />
+      <workItem from="1588921904549" duration="15165000" />
+      <workItem from="1589008818272" duration="16551000" />
+      <workItem from="1589098551945" duration="13737000" />
+      <workItem from="1589131054792" duration="673000" />
+      <workItem from="1589177627850" duration="21025000" />
+      <workItem from="1589264333074" duration="37131000" />
+      <workItem from="1589347491274" duration="24744000" />
+      <workItem from="1589436497548" duration="587000" />
+      <workItem from="1589446682596" duration="32840000" />
+      <workItem from="1589523350511" duration="10267000" />
+      <workItem from="1589649493707" duration="1201000" />
+      <workItem from="1589704640955" duration="4255000" />
+      <workItem from="1589812804988" duration="640000" />
+      <workItem from="1589879190338" duration="19262000" />
+      <workItem from="1589912973280" duration="4299000" />
+      <workItem from="1589952232386" duration="34853000" />
+      <workItem from="1590043958296" duration="16319000" />
+      <workItem from="1590125484254" duration="31856000" />
+      <workItem from="1590217518980" duration="27304000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2472" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589010333535">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2472" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589010333535" />
+    <state width="254" height="195" key="DatabaseViewActions_Filter" timestamp="1590164201202">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="254" height="195" key="DatabaseViewActions_Filter/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590164201202" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1589010370033">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589010370033" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1590138744563">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590138744563" />
+    <state x="2714" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589371424728" />
+    <state x="2676" y="345" width="408" height="348" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1588941856373">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2676" y="345" width="408" height="348" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1588941856373" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1590217520702">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590217520702" />
+    <state x="2576" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1590125479354" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1590144835840">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590144835840" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1590178712151">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590178712151" />
+  </component>
+</project>

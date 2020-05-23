@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Датчики</title>
+    <link rel="shortcut icon" href="source/mai.gif" type="image/png">
+
+    <script type="text/javascript" src="libs/JQuery3.5.0.js"></script> <!-- Подключение JQuery -->
+
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script> <!-- Подключение dataTables -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css"> <!-- Подключение dataTables -->
+
+<!--    <link rel="stylesheet" type="text/css" href="DataTables-1.10.21/css/jquery.dataTables.css"/> &lt;!&ndash; Подключение dataTables &ndash;&gt;-->
+<!--    <script type="text/javascript" src="DataTables-1.10.21/js/jquery.dataTables.js"></script> &lt;!&ndash; Подключение dataTables &ndash;&gt;-->
+
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> <!-- Подключение Normalize.css -->
+
+    <script type="text/javascript" charset="utf8" src="lightslider-master/src/js/lightslider.js"></script> <!-- Подключение lightslider -->
+    <link type="text/css" rel="stylesheet" href="lightslider-master/src/css/lightslider.css" /> <!-- Подключение lightslider -->
+
+    <script type="text/javascript" charset="utf8" src="swiper-master/package/js/swiper.min.js"></script> <!-- Подключение swiper -->
+    <link type="text/css" rel="stylesheet" href="swiper-master/package/css/swiper.min.css"> <!-- Подключение swiper -->
+
+    <link rel="stylesheet" href="prettyPhoto_compressed_3.1.6/css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" /> <!-- Подключение prettyPhoto -->
+    <script src="prettyPhoto_compressed_3.1.6/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script> <!-- Подключение prettyPhoto -->
+
+    <script src="js/sensors.js"></script> <!-- Подключение JS файла -->
+    <link rel="stylesheet" type="text/css" href="css/sensors.css"> <!-- Подключение CSS файла -->
+    <link rel="stylesheet" type="text/css" href="css/onoffswitch.css"> <!-- Подключение CSS файла -->
+</head>
+<body>
+<header style="z-index: 9999; background-color: #eeeeee">
+    <div class="header" style="z-index: 9999">
+        <span style="z-index: 9999"><img id="maiLogo" src="source/mai.gif" width="40px"></span>
+        <span style="margin-left: 50px; color: #008ad1; white-space: nowrap; z-index: 9999">Московский авиационный институт - БД Акселерометры</span>
+    </div>
+    <div style="right: 0">
+        <img id="authorization" height="20px" src="source/icons8-user-96.png">
+<!--        <button id="authorization" class="sensor-btn" style="position: fixed; top: 5px; right: 100px;" onclick="authorization">Авторизация</button>-->
+    </div>
+    <div class="onoffswitch" style="z-index: 9999">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+        <label class="onoffswitch-label" for="myonoffswitch">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
+</header>
+<div class="authorization">
+    <table>
+        <tr>
+            <td>Логин</td><td><input id='login'></td>
+        </tr>
+        <tr>
+            <td>Пароль</td><td><input type="password" id='password'></td>
+        </tr>
+        <tr>
+            <td align="left"><a onclick="authorization(1)">Вход</a></td>
+            <td align="right"><a id="registration">Регистрация</a></td>
+        </tr>
+    </table>
+</div>
+<div class="registration" align="center">
+    <table>
+        <tr>
+            <td>Логин</td><td><input id="regLogin"></td>
+        </tr>
+        <tr>
+            <td>Пароль</td><td><input type="password" id="regPassword"></td>
+        </tr>
+        <tr>
+            <td>Повторите пароль</td><td><input type="password" id="regPasswordRepeat"></td>
+        </tr>
+        <tr>
+            <td>Фамилия</td><td><input id="regSurname"></td>
+        </tr>
+        <tr>
+            <td>Имя</td><td><input id="regName"></td>
+        </tr>
+        <tr>
+            <td>Отчество</td><td><input id="regPatronymic"></td>
+        </tr>
+        <tr>
+            <td>Email</td><td><input type="email" id="regEmail"></td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <button id="reg-btn" class="sensor-btn" onclick="authorization(2)">Зарегестрироваться</button>
+                <a href="#" class="registration_close-btn"><span></span></a>
+            </td>
+        </tr>
+    </table>
+</div>
+<main>
+    <form class="wrapper">
+        <div class="menu">
+            <a href="#" class="menu-btn"><span></span></a>
+            <nav class="menu-list">
+                <a id="newSensor" href="#"><img height="20px" src="source/file_add.png">Новый датчик</a>
+                <a id="producerEdit" href="#"><img height="20px" src="source/file.png">Производители</a>
+<!--                <a id="producerNew" href="#"><img height="20px" src="source/file_add.png">Новый производитель</a>-->
+                <a id="literatureEdit" href="#"><img height="20px" src="source/file.png">Литература</a>
+<!--                <a id="literatureNew" href="#"><img height="20px" src="source/file_add.png">Новая литература</a>-->
+<!--                <a href="#">Главная</a>-->
+<!--                <a href="#">Новости</a>-->
+<!--                <a href="#">Контакты</a>-->
+<!--                <a href="#">Портфолио</a>-->
+            </nav>
+        </div>
+
+        <div class="mainTable content">
+            <table width="100%" cellspacing="1" class="display" id="mainDataTable">
+                <thead>
+                    <tr>
+                        <th> Название </th>
+                        <th> Погрешность </th>
+                        <th> Диапазон измерений </th>
+                        <th> Ресурс </th>
+                        <th> Вес </th>
+                        <th> Габариты </th>
+                        <th> Способ измерения </th>
+                        <th> Действие </th>
+                    </tr>
+                </thead>
+                <tbody>
+<!--                    <tr>-->
+<!--                        <td> <input type="text" name="os_filter" id="os_filter" value="" /> </td>-->
+<!--                        <td> <input type="text" name="bandwidth_filter" id="bandwidth_filter" value="" /> </td>-->
+<!--                        <td> <input type="text" name="count_filter" id="count_filter" value="" /> </td>-->
+<!--                    </tr>-->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="sensor_info">
+            <a href="#" class="sensor_info-btn"><span></span></a>
+
+            <div id="sensor-div" >
+                <table>
+                    <tr hidden><td>Идентификатор</td><td><input id="ID" class="sensorVal"></td><td>Схема</td><td><input type="file"></td></tr>
+                    <tr>
+                        <td>
+                            <table valign="top">
+                                <tr><td>Название</td><td><input id="title" class="sensorVal" required></td></tr>
+                                <tr><td>Производитель</td><td><input id="producer" class="sensorVal" required></td></tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                                <tr><td>Длина</td><td><input id="length_mm" class="sensorVal"></td></tr>
+                                <tr><td>Ширина</td><td><input id="width_mm" class="sensorVal"></td></tr>
+                                <tr><td>Высота</td><td><input id="height_mm" class="sensorVal"></td></tr>
+                                <tr><td>Вес, г</td><td><input id="weight_g" class="sensorVal"></td></tr>
+                            </table>
+                        </td>
+                        <td rowspan="2">
+                            <table>
+                                <tr>
+<!--                                    <input class="sensorVal sensor-btn" id="scheme-inp" type="file" onchange="upload_image(0, this)" accept="image/*">-->
+                                    <input class="sensorVal sensor-btn" id="scheme-inp" type="file" accept="image/*">
+<!--                                    <button id="scheme-btn" class="sensor-btn" onclick="upload_image(0)">Вставить изображение</button>-->
+                                </tr>
+<!--                                <tr><a id="electric_circuit_href" rel="prettyPhoto"><img id="electric_circuit" height="200px"></a></tr>-->
+                                <tr><img id="electric_circuit" height="200px"></tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <tr><td>Чувствительный элемент</td><td><input id="sensitive_element" class="sensorVal"></td></tr>
+                                <tr><td>Ресурс, ч</td><td><input id="resource_h" class="sensorVal" min="1"></td></tr>
+                                <tr><td>Нижнй порог температуры, &#8451</td><td><input id="lower_temperature_threshold_c" class="sensorVal"></td></tr>
+                                <tr><td>Верхний порог температуры, &#8451</td><td><input id="upper_temperature_threshold_c" class="sensorVal"></td></tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                                <tr><td>Погрешность, %</td><td><input id="infelicity_percent" class="sensorVal"></td></tr>
+                                <tr><td>Нижний диапазон измерений</td><td><input id="lower_measurement_range" class="sensorVal"></td></tr>
+                                <tr><td>Верхний диапазон измерений</td><td><input id="upper_measurement_range" class="sensorVal"></td></tr>
+                                <tr><td>Единица измерения</td><td><input id="unit_of_measurement" class="sensorVal"></td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="center">
+                            <div class="carousel">
+                                <div class="item">
+                                    <ul id="content-slider" class="content-slider">
+                                        <li>
+                                            <h3>1</h3>
+                                        </li>
+                                        <li>
+                                            <h3>2</h3>
+                                        </li>
+                                        <li>
+                                            <h3>3</h3>
+                                        </li>
+                                        <li>
+                                            <h3>4</h3>
+                                        </li>
+                                        <li>
+                                            <h3>5</h3>
+                                        </li>
+                                        <li>
+                                            <h3>6</h3>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="right">
+                            <span style="display: inline-block">
+                                <input class="sensor-btn" id="saveNewSensorButton" type="button" value="Сохранить">
+                                <input class="sensor-btn" id="editSensorButton" type="button" value="Применить">
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="producer-div">
+            </div>
+
+            <div id="literature-div">
+            </div>
+        </div>
+    </form>
+</main>
+</body>
+<div id="Modal" class="modal">
+    <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <img class="modal-image">
+    </div>
+</div>
+</html>
